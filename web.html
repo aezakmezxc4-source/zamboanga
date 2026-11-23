@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festive World - Home</title>
 
-     <style>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -15,7 +15,11 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #FFF8E7;
+            background-image: url("images(6).jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: #573B32;
         }
 
@@ -49,56 +53,23 @@
         /* HERO SECTION */
 
         .hero {
-            background-color: #FFD166;
+            background-color: transparent;
             text-align: center;
             padding: 110px 20px;
         }
 
         .hero h1 {
             font-size: 45px;
-            color: #573B32;
-            margin-bottom: 20px;
+            color: white;
+            margin-bottom: 35px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
         .hero p {
             line-height: 1.7;
         }
 
-        .btn {
-            display: inline-block;
-            background-color: #EF476F;
-            color: white;
-            padding: 14px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-top: 25px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #FF5A36;
-        }
-
-        /* EXPLORE SECTION */
-
-        .content {
-            padding: 60px 8%;
-            text-align: center;
-            background-color: aqua;
-        }
-
-        .content h2 {
-            color: #FF5A36;
-            margin-bottom: 15px;
-            font-size: 30px;
-        }
-
-        .content p {
-            line-height: 1.7;
-        }
-
-        /* COLORFUL CLICKABLE CARDS */
+        /* INFORMATION CARDS */
 
         .cards {
             display: flex;
@@ -108,29 +79,57 @@
             margin-top: 35px;
         }
 
-        .explore-card {
+        .card {
             width: 280px;
             padding: 45px 20px;
             border-radius: 15px;
-            text-decoration: none;
             color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 170px;
+            line-height: 1.6;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .culture {
+            background-color: #EF476F;
+        }
+
+        .foods {
+            background-color: #06D6A0;
+        }
+
+        .attractions {
+            background-color: #4D96FF;
+        }
+
+        /* EXPLORE SECTION */
+
+        .content {
+            padding: 0 8% 70px;
+            text-align: center;
+            background-color: transparent;
+        }
+
+        /* EXPLORE NOW BUTTON */
+
+        .btn {
+            display: inline-block;
+            background-color: #EF476F;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
             transition: 0.3s;
         }
 
-        .explore-card h3 {
-            font-size: 25px;
-            margin-bottom: 15px;
-        }
-
-        .explore-card p {
-            line-height: 1.5;
-        }
-
-        /* HOVER EFFECT */
-
-        .explore-card:hover {
-            transform: translateY(-8px);
-            opacity: 0.85;
+        .btn:hover {
+            background-color: #FF5A36;
+            transform: scale(1.05);
         }
 
         /* FOOTER */
@@ -140,7 +139,6 @@
             color: white;
             text-align: center;
             padding: 22px;
-            margin-top: 30px;
         }
 
         /* MOBILE RESPONSIVENESS */
@@ -161,11 +159,15 @@
                 margin: 5px;
             }
 
+            .hero {
+                padding: 75px 20px;
+            }
+
             .hero h1 {
                 font-size: 32px;
             }
 
-            .explore-card {
+            .card {
                 width: 100%;
             }
         }
@@ -187,27 +189,29 @@
 </header>
 
 <section class="hero">
-       <h1>Península de Zamboanga: ¡Celebra con el Vida! </h1>
-    
+
+    <h1>Península de Zamboanga: ¡Celebra con el Vida!</h1>
+
     <div class="cards">
 
-    <div class="card culture">
-        <p>Zamboanga Peninsula is also known as "Asia's Latin City" due to its Spanish-creole language, Chavacano.</p>
-    </div>
+        <div class="card culture">
+            <p>Zamboanga Peninsula is also known as "Asia's Latin City" due to its Spanish-creole language, Chavacano.</p>
+        </div>
 
-    <div class="card foods">
-        <p>The name "Zamboanga" comes from the Malay word jambangan, which means "garden of flowers" or "flowers in a vase".</p>
-    </div>
+        <div class="card foods">
+            <p>The name "Zamboanga" comes from the Malay word jambangan, which means "garden of flowers" or "flowers in a vase".</p>
+        </div>
 
-    <div class="card attractions">
-        <p> It is also known as the "Sardines Capital of the Philippines" because it supplies much of the country's processed fish.</p>
+        <div class="card attractions">
+            <p>It is also known as the "Sardines Capital of the Philippines" because it supplies much of the country's processed fish.</p>
+        </div>
+
     </div>
 
 </section>
 
 <section class="content">
     <a href="explore.html" class="btn">Explore Now</a>
-</div>
 </section>
 
 <footer>
