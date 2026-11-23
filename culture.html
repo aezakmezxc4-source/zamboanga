@@ -239,3 +239,245 @@
 
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamboanga Culture</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFF8E7;
+            color: #573B32;
+        }
+
+        header {
+            background-color: #FF5A36;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .page-title {
+            background-color: #EF476F;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .page-title h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .culture-item {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .culture-item img {
+            width: 40%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .culture-info {
+            flex: 1;
+        }
+
+        .culture-info h2 {
+            color: #EF476F;
+            margin-bottom: 15px;
+            font-size: 27px;
+        }
+
+        .culture-info p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #573B32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                justify-content: center;
+            }
+
+            .culture-item {
+                flex-direction: column;
+            }
+
+            .culture-item img {
+                width: 100%;
+            }
+
+            .page-title h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">ZAMBOANGA</div>
+
+        <nav>
+            <a href="web.html">Home</a>
+            <a href="culture.html">Culture</a>
+            <a href="foods.html">Foods</a>
+            <a href="places.html">Attractions</a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1>Culture and Heritage</h1>
+        <p>Explore the traditions and cultural identity of Zamboanga.</p>
+    </section>
+
+   
+
+<main class="container">
+
+    <!-- HERMOSA FESTIVAL -->
+    <section class="culture-item">
+        <img src="hermosa.jfif"
+             alt="Hermosa Festival">
+
+        <div class="culture-info">
+            <h2>Hermosa Festival (Fiesta Pilar)</h2>
+            <p>
+                Celebrated annually in Zamboanga City on October 12
+                to honor the miraculous image of Our Lady of the
+                Pillar (Nuestra Señora del Pilar). It features
+                vibrant street dances, cultural shows, and the
+                famous Regatta de Zamboanga, a colorful race of
+                traditional vinta boats.
+            </p>
+        </div>
+    </section>
+
+    <!-- BUKLOG RITUAL -->
+    <section class="culture-item">
+        <img src="buklog.jpg"
+             alt="Buklog ritual">
+
+        <div class="culture-info">
+            <h2>Buklog Ritual</h2>
+            <p>
+                The Buklog ritual is the grandest and most sacred
+                tradition of the indigenous Subanen people across
+                the Zamboanga Peninsula (Region 9). Inscribed on
+                the UNESCO Intangible Cultural Heritage List,
+                this elaborate thanksgiving system is held to
+                appease spirits, express gratitude for a bountiful
+                harvest, and restore community harmony.
+            </p>
+        </div>
+    </section>
+
+    <!-- AMBALANG AUSALIN -->
+    <section class="culture-item">
+        <img src="ambalang.jpg"
+             alt="Ambalang Ausalin">
+
+        <div class="culture-info">
+            <h2>Ambalang Ausalin</h2>
+            <p>
+                Ambalang Ausalin is a renowned Yakan master weaver
+                and National Living Treasure (Gawad sa Manlilikha
+                ng Bayan). She is recognized for preserving the
+                traditional weaving practices of the Yakan
+                community in Basilan, Philippines.
+            </p>
+        </div>
+    </section>
+
+    <!-- YAKAN TRADITIONAL WEAVING -->
+    <section class="culture-item">
+        <img src="yakan.jpg"
+             alt="Yakan traditional tennun weaving">
+
+        <div class="culture-info">
+            <h2>Yakan Traditional Weaving (Tennun)</h2>
+            <p>
+                Yakan weaving, locally known as tennun, is a
+                complex art form meticulously kept alive by the
+                indigenous Yakan community. Using a traditional
+                backstrap loom, artisans spend weeks interlacing
+                vibrant threads into bold, mathematical geometric
+                patterns inspired by nature. These high-quality
+                fabrics are highly prized and crafted into
+                clothing, bags, and home decor.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+
+
+    <footer>
+        <p>Discover Zamboanga | Culture and Heritage</p>
+    </footer>
+
+</body>
+</html>
